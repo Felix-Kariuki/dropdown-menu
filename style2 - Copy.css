@@ -1,0 +1,95 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(car.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+} 
+h1{
+	margin: 10px;
+	font-family: newstimesroman;
+	text-decoration: underline;
+	/*border-style: bold;*/
+	color: navy;
+}
+.main{
+	margin: 25px;
+	font-family: arial;
+	border-radius: 5px;
+	background: lightblue;
+	width: 1000px;
+	padding: 5px;
+	margin-top: 5px;
+}
+.menubar{
+	background: #031320;
+	text-align: center;
+}
+.menubar ul{
+	display: inline-flex;
+	color: #fff;
+	list-style: none;
+}
+.menubar ul li{
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+.menubar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.active, .menubar ul li:hover{
+	background: #000;
+	border-radius: 3px;
+}
+.img{
+	display: inline-flex;
+	height: 14px;
+}
+.submenu1{
+	display: none;
+}
+.menubar ul li:hover .submenu1{
+	display: block;
+	position: absolute;
+	background: #031320;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.menubar ul li:hover .submenu1 ul{
+	display: block;
+	margin: 10px;
+}
+.menubar ul li:hover .submenu1 ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0px;
+	text-align: left;
+}
+.menubar ul li:hover .submenu1 ul li:last-child{
+	border-bottom: none;
+}
+.menubar ul li:hover .submenu1 ul li a:hover{
+	color: #b2ff00;
+}
+.img1{
+	float: right;
+	height: 15px;
+}
+.submenu2{
+	display: none;
+}
+.hoverme:hover .submenu2{
+	position: absolute;
+	display: block;
+	margin-top: -20%;
+	margin-left: 140px;
+	background-color: #031320;
+}
